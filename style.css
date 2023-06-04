@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+
+.page {
+    width: 1600px;
+    height: 1200px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    margin: 75px;
+    background-image: url("assets/fundo.svg");
+    padding: 50px 250px 150px;
+}
+
+.moles {
+        display: grid;
+        grid-template-areas: 
+        "A B C D"
+        "E F G H"
+        "I J K L";
+        margin-top: 200px;
+        gap: 50px;
+}
+
+.mole {
+    background-image: url(assets/toupeira6.svg);
+    width: 223px;
+    height: 169px;
+    animation: topeira;
+    animation-duration: 700ms;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+.mole:hover{
+    animation: toupeira 3.5s infinite;
+  }
+
+@keyframes topeira {
+    0% {
+        background-image: url(assets/toupeira1.svg);
+    }
+    25% {
+        background-image: url(assets/toupeira2.svg)
+    }
+    50% {
+        background-image: url(assets/toupeira3.svg);
+    }
+    75% {
+        background-image: url(assets/toupeira4.svg)
+    }
+    100% {
+        background-image: url(assets/toupeira5.svg)
+    }
+}
+
+.page .mole:hover div:nth-child(1) {
+    grid-area: A;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: B;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: C;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: D;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: E;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: F;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: G;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: H;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: I;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: J;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: K;
+}
+.page .mole:hover div:nth-child(1) {
+    grid-area: L;
+}
+
